@@ -194,15 +194,26 @@ aside .form {
 
 
 /* ------------ Mobile Styles - FAQ ------------ */
-
-.faq-content {
-
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* ------------ Mobile Styles - About ------------ */
 
 .mission {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 .mission-content {
 
@@ -211,10 +222,10 @@ aside .form {
 
 }
 .contact-section {
-
-}
-.contact-content {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 .general-info {
 
