@@ -97,6 +97,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ------------ Base Text Styles ------------ */
+h1, h2, h3, h4, p {
+  padding: 0 20px;
+  margin: 15px 0;
+}
 /* ------------ Base Header - Footer Styles ------------ */
 header, footer {
   display: flex;
@@ -105,28 +110,40 @@ header, footer {
   flex-flow: row wrap;
 }
 /* --- Header --- */
+header {
+    padding: 15px 0;
+}
 
 header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
+    margin: 0;
 }
 header .header-divider {
-
+    width: 100%;
 }
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 /* --- Footer --- */
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
 footer .social-icons {
     display: flex;
     justify-content: space-around;
@@ -144,6 +161,9 @@ footer .social-icons p {
     justify-content: center;
     align-items: center;
 }
+footer p {
+    margin: 0;
+}
 
 /* ------------ Mobile Styles - Homepage ------------ */
 
@@ -152,7 +172,9 @@ footer .social-icons p {
   justify-content: center;
   flex-flow: row wrap;
 }
-
+.hero-area h2 {
+    margin: 55px 0;
+}
 aside {
   display: flex;
   justify-content: center;
@@ -163,7 +185,7 @@ aside .form-description {
 
 }
 aside .form {
-
+    margin: 35px 0;
 }
 
 /* --- Features --- */
@@ -171,6 +193,9 @@ aside .form {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+.features article {
+  width: 55%;
 }
 .fontawesome-icon {
 
@@ -184,6 +209,12 @@ aside .form {
 .features-item-description {
 
 }
+.features h2 {
+    padding: 35px 20px;
+}
+.features p {
+    margin: 0;
+}
 
 /* --- Reviews --- */
 .reviews {
@@ -191,7 +222,9 @@ aside .form {
   justify-content: center;
   flex-flow: row wrap;
 }
-
+.reviews h3 {
+  width: 50%;
+}
 
 /* ------------ Mobile Styles - FAQ ------------ */
 .faq {
