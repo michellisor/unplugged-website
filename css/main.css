@@ -145,12 +145,6 @@ footer .content-wrapper {
 }
 
 footer .social-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer .social-icons {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -195,6 +189,10 @@ aside .form {
   flex-flow: row wrap;
 }
 .features article {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
   width: 55%;
 }
 .fontawesome-icon {
@@ -348,21 +346,118 @@ aside .form {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  h1, h2, h3, h4, p {
+    margin: 15px 0;
 }
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  header, footer {
+    align-items: center;
 }
+header {
+    height: 70px;
+}
+header .content-wrapper{
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+header img {
+  padding: 0 65px;
+}
+.hero-area {
+    justify-content: flex-start;
+}
+.hero-area .content-wrapper {
+    justify-content: flex-start;
+    margin: 0 60px;
+}
+aside .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin: 0 60px;
+}
+aside .form-description {
+  width: 50%
+}
+aside .form {
+  width: 50%;
+  margin: 0;
+}
+.features .content-wrapper {
+  justify-content: flex-start;
+  margin: 0 60px;
+}
+.features article {
+  width: 50%;
+}
+.reviews .content-wrapper {
+  justify-content: flex-start;
+  margin: 100px 60px;
+}
+.reviews article div {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+footer .content-wrapper {
+    width: 100%;
+}
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+footer .contact {
+  display: flex;
+  justify-content: center;
+    flex-flow: row wrap;
+  width: 50%;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 50%;
+}
+footer p {
+  padding: 10px;
+}
+/* ------FAQ------ */
+.faq .content-wrapper {
+  justify-content: flex-start;
+  margin: 0 60px;
+}
+/* ------ABOUT------ */
+.mission .content-wrapper {
+  justify-content: flex-start;
+  margin: 0 60px;
+ }
+ .mission .mission-content {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+ }
+ .contact-section .content-wrapper {
+   justify-content: flex-start;
+   margin: 0 60px;
+   width: 100%;
+ }
+ .contact-section .contact-content {
+   display: flex;
+   justify-content: flex-start;
+   flex-flow: row wrap;
+   width: 100%;
+}
+ .contact-section .general-info {
+   width: 50%;
+ }
+}
+   @media only screen and (min-width: 1200px) {
+   /*Desktop styles here*/
+   }
 
 /* ==========================================================================
    Print styles.
