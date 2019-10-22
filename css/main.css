@@ -484,7 +484,7 @@ footer .contact {
     justify-content: space-between;
     align-items: flex-start;
   }
-}
+  }
    @media only screen and (min-width: 1200px) {
    /*---General---*/
    .content-wrapper {
@@ -500,6 +500,7 @@ footer .contact {
     .hero-area h2 {
       width: 75%;
     }
+
     /*Aside*/
     aside .content-wrapper {
       justify-content: space-around;
@@ -507,6 +508,7 @@ footer .contact {
     .form-description, .form {
     width: 30%;
     }
+
     /*Features*/
     .features article {
       flex-basis: 33.3%
@@ -514,11 +516,34 @@ footer .contact {
     .features h2 {
       width: 70%;
     }
+
     /*Reviews*/
     .reviews article div {
       width: 42%;
     }
-   }
+
+    /*---About---*/
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+    width: 100%;
+    }
+    .contact-section .content-wrapper h2 {
+    margin-bottom: 40px;
+    }
+
+    /*---FAQ---*/
+    .faq h2 {
+    width: 100%;
+  }
+/*
+  .faq-content {
+    flex-basis: 35%;
+  }
+  */
+  .faq-content {
+    margin-bottom: 40px;
+  }
+  }
 
 /* ==========================================================================
    Print styles.
