@@ -372,9 +372,6 @@ aside .form-description {
     max-width: 640px;
     margin: 100px 0;
   }
-  h1, h2, h3, h4, p {
-    margin: 15px 0;
-}
 
   header, footer {
     align-items: center;
@@ -489,7 +486,38 @@ footer .contact {
   }
 }
    @media only screen and (min-width: 1200px) {
-   /*Desktop styles here*/
+   /*---General---*/
+   .content-wrapper {
+     max-width: 960px;
+   }
+   /*---Homepage---*/
+   .hero-area .content-wrapper {
+       display: flex;
+       justify-content: flex-start;
+       align-content: flex-start;
+       margin: 0;
+    }
+    .hero-area h2 {
+      width: 75%;
+    }
+    /*Aside*/
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+    .form-description, .form {
+    width: 30%;
+    }
+    /*Features*/
+    .features article {
+      flex-basis: 33.3%
+    }
+    .features h2 {
+      width: 70%;
+    }
+    /*Reviews*/
+    .reviews article div {
+      width: 42%;
+    }
    }
 
 /* ==========================================================================
