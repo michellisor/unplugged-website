@@ -101,6 +101,7 @@ textarea {
 
    html {
       font-size: 16px;
+      color: #e2e3ed;
    }
 
    body {
@@ -112,6 +113,7 @@ textarea {
    ol {
      font-family: 'Open Sans', sans-serif;
      font-size: 1.125em;
+     list-style-type: none;
    }
 
    a {
@@ -128,10 +130,12 @@ textarea {
    h3,
    h4 {
      font-family: 'Poppins', sans-serif;
+     font-size: 1.125em;
+     font-weight: 500;
    }
 
    p {
-
+     font-size: .875em;
    }
 
    img {
@@ -191,11 +195,13 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
 }
 
 /* --- Footer --- */
 footer {
   flex-direction: column;
+  background-color: #202322;
 }
 
 footer .content-wrapper {
@@ -226,9 +232,11 @@ footer .copyright {
 /* ------------ Mobile Styles - Homepage ------------ */
 
 .hero-area {
+  background: url(../img/hero.png) no-repeat center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  height: 500px;
 }
 
 aside {
@@ -236,6 +244,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 aside .form-description {
 
@@ -247,9 +256,11 @@ aside .form-description {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/sitting-background.png) no-repeat center;
 }
 
 .features article {
+  text-align: center;
   width: 55%;
   margin: 30px 0;
 }
@@ -277,6 +288,7 @@ aside .form-description {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 .reviews h2 {
   margin-bottom: 40px;
