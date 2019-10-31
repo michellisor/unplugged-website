@@ -647,7 +647,9 @@ footer p {
   .mission-content p {
     width: 40%;
   }
-
+  .map figure {
+      padding-bottom: 47%;
+  }
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -713,6 +715,9 @@ footer p {
     }
     .contact-section .content-wrapper h2 {
     margin-bottom: 40px;
+    }
+    .map figure {
+        padding-bottom: 37%;
     }
 
     /*---FAQ---*/
