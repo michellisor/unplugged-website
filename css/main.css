@@ -126,6 +126,7 @@ textarea {
      font-family: 'Poppins', sans-serif;
      font-size: 1.875em;
      font-weight: 500;
+     line-height: 1.2;
      margin: 0;
    }
 
@@ -202,6 +203,7 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   padding: 0;
+  margin: 0;
 }
 header nav ul li {
   font-size: 1.125em;
@@ -216,7 +218,6 @@ footer {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
 }
 footer .contact {
   margin-bottom: 50px;
@@ -232,11 +233,16 @@ footer .social-icons p {
     justify-content: center;
     align-items: center;
 }
+.social-icons i {
+    font-size: 2.25em;
+    color: #527158;
+    padding: 10px 20px;
+}
 footer p {
     margin: 0;
 }
 footer .copyright {
-  margin: 20px 0;
+  margin-bottom: 10px;
 }
 
 /* ------------ Mobile Styles - Homepage ------------ */
@@ -352,7 +358,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin-top: 50px;
+  margin: 50px 0 0 0;
 }
 .faq h2 {
   margin-bottom: 40px;
@@ -363,7 +369,7 @@ input[type=button] {
 }
 .faq-content h4 {
   line-height: 1.333;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 
@@ -597,7 +603,7 @@ footer {
 }
 footer .content-wrapper {
     width: 65%;
-    martin: 100px 0;
+    margin: 100px 0;
 }
 footer .footer-content {
     display: flex;
@@ -629,14 +635,18 @@ footer p {
 /* ------FAQ------ */
 .faq .content-wrapper {
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .faq-content {
-  flex-basis: 40%;
+  flex-basis: 48%;
 }
-
+.faq-content h4 {
+    font-size: .875em;
+}
 .faq h2 {
   width: 100%;
+  margin-bottom: 30px;
 }
 /* ------ABOUT------ */
 .mission-content {
@@ -653,8 +663,11 @@ footer p {
   }
   .contact-section .content-wrapper h2 {
     width: 80%;
+    margin-bottom: 40px;
   }
-
+  .contact-section h4 {
+    font-size: 1.5em;
+  }
   .contact-content {
     display: flex;
     justify-content: space-between;
@@ -714,8 +727,8 @@ footer p {
     .contact-section .content-wrapper h2 {
     width: 100%;
     }
-    .contact-section .content-wrapper h2 {
-    margin-bottom: 40px;
+    .contact-section h4 {
+      margin-top: 0;
     }
     .map figure {
         padding-bottom: 37%;
